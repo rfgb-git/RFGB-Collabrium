@@ -1,0 +1,389 @@
+<div class="main-box-white">
+    <c-row>
+        <c-col xs="12" lg="12">
+            <c-card class="mb-4">
+                <c-card-header>
+                    <c-row class="align-items-center">
+                        <c-col sm="5">
+                            <h4 class="card-title mb-0" id="traffic"><b>ASN Request</b></h4>
+                            <div class="small text-body-secondary">January 2025 - June 2025</div>
+                        </c-col>
+                        <c-col class="d-none d-md-block" sm="7">
+                            <!-- <button cButton class="btn btn-primary ng-star-inserted float-end" color="primary"
+                                aria-label="Download">
+                                <svg cIcon name="cilCloudDownload"></svg> Export
+                            </button> -->
+                        </c-col>
+                    </c-row>
+                    <hr>
+                    <c-card class="card mb-3 text-white bg-dark">
+                        <c-card-header class="card-header">
+                            <h5 ccardtitle="" class="card-title">Shipment</h5>
+                        </c-card-header>
+                        <c-card-body class="card-body bg-gradient">
+
+                            <c-row>
+                                <c-col sm="12">
+                                    <div class="mb-3">
+                                        <form cForm class="row g-3">
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Transport ID</label>
+                                                <input cFormControl id="inputEmail4" type="text" />
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Mode of Tranport</label>
+                                                <select cSelect id="inputState">
+                                                    <option>TNA 472</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Vechile Number</label>
+                                                <input cFormControl id="inputEmail4" type="text" />
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Shipping Date</label>
+                                                <div class="input-group mb-3">
+                                                    <input aria-describedby="basic-addon2"
+                                                        aria-label="Recipient's username" cformcontrol=""
+                                                        placeholder="Date" type="text" class="form-control">
+                                                    <span cinputgrouptext="" id="basic-addon2"
+                                                        class="input-group-text"><a><svg cIcon
+                                                                name="cilCalendar"></svg></a></span>
+                                                </div>
+
+                                            </c-col>
+
+                                            <c-col [xs]="3">
+                                                <label cLabel for="inputAddress">Driver Name</label>
+                                                <input cFormControl id="inputAddress" placeholder="" />
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Delivery Date</label>
+                                                <div class="input-group mb-3">
+                                                    <input aria-describedby="basic-addon2"
+                                                        aria-label="Recipient's username" cformcontrol=""
+                                                        placeholder="Date" type="text" class="form-control">
+                                                    <span cinputgrouptext="" id="basic-addon2"
+                                                        class="input-group-text"><a><svg cIcon
+                                                                name="cilCalendar"></svg></a></span>
+                                                </div>
+
+                                            </c-col>
+                                            <c-col [xs]="6">
+                                                <label cLabel for="inputAddress2">Status</label>
+                                                <select cSelect id="inputState">
+                                                    <option>Open</option>
+                                                    <option>Close</option>
+                                                </select>
+                                            </c-col>
+                                            <c-col [xs]="12">
+                                                <h3 ccardtitle="" class="card-title">Document Details</h3>
+                                            </c-col>
+
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">DC Number</label>
+                                                <input cFormControl id="inputEmail4" type="text" />
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">DC Date</label>
+                                                <div class="input-group mb-3">
+                                                    <input aria-describedby="basic-addon2"
+                                                        aria-label="Recipient's username" cformcontrol=""
+                                                        placeholder="Date" type="text" class="form-control">
+                                                    <span cinputgrouptext="" id="basic-addon2"
+                                                        class="input-group-text"><a><svg cIcon
+                                                                name="cilCalendar"></svg></a></span>
+                                                </div>
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">ASN Number</label>
+                                                <input cFormControl id="inputEmail4" type="text" />
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">LR Number</label>
+                                                <div class="input-group mb-3"><input cFormControl id="inputAddress"
+                                                        placeholder="" />
+
+                                                </div>
+
+                                            </c-col>
+
+                                            <c-col [xs]="3">
+                                                <label cLabel for="inputAddress">LR Date</label>
+                                                <div class="input-group mb-3">
+                                                    <input aria-describedby="basic-addon2"
+                                                        aria-label="Recipient's username" cformcontrol=""
+                                                        placeholder="Date" type="text" class="form-control">
+                                                    <span cinputgrouptext="" id="basic-addon2"
+                                                        class="input-group-text"><a><svg cIcon
+                                                                name="cilCalendar"></svg></a></span>
+                                                </div>
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Invoice Number</label>
+                                                <input cFormControl id="inputEmail4" type="text" />
+
+                                            </c-col>
+                                            <c-col [xs]="6">
+                                                <label cLabel for="inputAddress2">Status</label>
+                                                <c-input-group class="input-group mb-3"><input cformcontrol=""
+                                                        id="inputGroupFile02" type="file" class="form-control"><label
+                                                        cinputgrouptext="" for="inputGroupFile02"
+                                                        class="input-group-text"> Upload </label></c-input-group>
+                                            </c-col>
+
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Bill of Landing</label>
+                                                <input cFormControl id="inputEmail4" type="text" />
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Invoice Date</label>
+                                                <div class="input-group mb-3">
+                                                    <input aria-describedby="basic-addon2"
+                                                        aria-label="Recipient's username" cformcontrol=""
+                                                        placeholder="Date" type="text" class="form-control">
+                                                    <span cinputgrouptext="" id="basic-addon2"
+                                                        class="input-group-text"><a><svg cIcon
+                                                                name="cilCalendar"></svg></a></span>
+                                                </div>
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">E-Way Bill Number</label>
+                                                <input cFormControl id="inputEmail4" type="text" />
+                                            </c-col>
+                                            <c-col [md]="3">
+                                                <label cLabel for="inputEmail4">Number of Packages</label>
+                                                <div class="input-group mb-3"><input cFormControl id="inputAddress"
+                                                        placeholder="" />
+
+                                                </div>
+
+                                            </c-col>
+
+                                            <c-col [xs]="12">
+                                                <c-form-check>
+                                                    <input cFormCheckInput id="gridCheck" name="gridCheck"
+                                                        type="checkbox" />
+                                                    <label cFormCheckLabel for="gridCheck">Check me out</label>
+                                                </c-form-check>
+                                            </c-col>
+                                            <c-col [xs]="12">
+                                                <button cButton type="submit">Save & Create Inbound Gateway</button>
+                                            </c-col>
+                                        </form>
+
+                                    </div><button cbutton="" class="btn shadow btn-success" type="button">Go
+                                        Home</button>
+                                </c-col>
+
+                            </c-row>
+
+                        </c-card-body>
+                    </c-card>
+                </c-card-header>
+            </c-card>
+        </c-col>
+    </c-row>
+    <c-row>
+        <c-col xs="12" lg="12">
+            <c-card class="mb-4">
+                <c-card-body>
+                    <div class="table-responsive">
+                        <table class="table mb-0 border align-middle table-hover table-striped">
+                            <thead class="text-nowrap text-truncate bg-body-tertiary">
+                                <tr class="text-center">
+                                    <th>Item No</th>
+                                     
+                                    <th class="text-start">Name</th>
+                                    <th>Invoice No</th>
+                                    <th>Process %</th>
+                                    <th>ASN No</th>
+                                    <th>Inbound Delivery No</th>
+                                    <th>Status</th>
+                                    <th>Approved By</th>
+                                    <th>Posted Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <b>1</b>
+                                    </td>
+                                      
+                                    <td class="text-center">
+                                        51 A
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <strong>July 1, 2025</strong>
+
+                                        </div>
+                                         
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <strong>50%</strong>
+
+                                        </div>
+                                        <div class="progress progress-thin">
+                                            <div class="progress-bar bg-success" style="width: 50%"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <small class="text-secondary">KKT243788</small>
+                                    </td>
+                                    <td>
+                                        <div class="small text-secondary">B51</div>
+
+                                    </td>
+                                    <td>
+                                        <div><button class="btn btn-outline-success ng-star-inserted">Open</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div><b>Owner</b></div>
+                                    </td>
+                                    <td>
+                                        <div><small class="text-secondary">Jul 10, 2025</small></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <b>2</b>
+                                    </td>
+                                     
+                                    <td class="text-center">
+                                        76 B
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <strong>June 28, 2025</strong>
+
+                                        </div>
+                                        
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <strong>78%</strong>
+
+                                        </div>
+                                        <div class="progress progress-thin">
+                                            <div class="progress-bar bg-success" style="width: 78%"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <small class="text-secondary">KKT243788</small>
+                                    </td>
+                                    <td>
+                                        <div class="small text-secondary">B51</div>
+
+                                    </td>
+                                    <td>
+                                        <div><button class="btn btn-outline-success ng-star-inserted">Open</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div><b>Owner</b></div>
+                                    </td>
+                                    <td>
+                                        <div><small class="text-secondary">Jul 10, 2025</small></div>
+                                    </td>
+                                </tr>
+                                
+                                 <tr>
+                                    <td class="text-center">
+                                        <b>2</b>
+                                    </td>
+                                     
+                                    <td class="text-center">
+                                        76 B
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <strong>June 24, 2025</strong>
+
+                                        </div>
+                                         
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <strong>90%</strong>
+
+                                        </div>
+                                        <div class="progress progress-thin">
+                                            <div class="progress-bar bg-danger" style="width: 90%"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <small class="text-secondary">KKT243788</small>
+                                    </td>
+                                    <td>
+                                        <div class="small text-secondary">B51</div>
+
+                                    </td>
+                                    <td>
+                                        <div><button class="btn btn-outline-danger ng-star-inserted">Close</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div><b>Owner</b></div>
+                                    </td>
+                                    <td>
+                                        <div><small class="text-secondary">Jul 10, 2025</small></div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="text-center">
+                                        <b>2</b>
+                                    </td>
+                                     
+                                    <td class="text-center">
+                                        76 B
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <strong>June 28, 2025</strong>
+
+                                        </div>
+                                         
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <strong>18%</strong>
+
+                                        </div>
+                                        <div class="progress progress-thin">
+                                            <div class="progress-bar bg-warning" style="width: 18%"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <small class="text-secondary">KKT243788</small>
+                                    </td>
+                                    <td>
+                                        <div class="small text-secondary">B51</div>
+
+                                    </td>
+                                    <td>
+                                        <div><button class="btn btn-outline-warning ng-star-inserted">Open</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div><b>Owner</b></div>
+                                    </td>
+                                    <td>
+                                        <div><small class="text-secondary">Jul 10, 2025</small></div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </c-card-body>
+            </c-card>
+        </c-col>
+
+    </c-row>
+
+</div>
