@@ -1,0 +1,138 @@
+<div class="row login-register-bar">
+  <div class="col-lg-6">
+
+    <div class="blank-layout-container justify-content-center align-items-center bg-light bg-left">
+      <div class="position-relative row w-100 h-100 bg-gredient justify-content-center">
+        <mat-card class="cardWithShadow  ">
+          <mat-card-content class="p-32">
+            <div class="text-left m-t-20 m-b-12 dashboard-a-head">
+              <a [routerLink]="['/dashboard']" class="d-flex">
+                <i class="iconify icon-20 d-flex" data-icon="iconamoon:arrow-left-2-light"></i> Back to Dashboard
+              </a>
+            </div>
+            <div class="text-left dashboard-bar1">
+              <h1>Register</h1>
+              <p>Enter your email and password to Register!</p>
+            </div>
+            <div class="row m-t-12 custom-row">
+              <div class="col-12 col-sm-6">
+                <button mat-stroked-button class="w-100">
+                  <div class="d-flex align-items-center">
+                    <img src="/assets/images/svgs/google-icon.svg" alt="google" width="16" class="m-r-8" />
+                    <span>
+                      Register with Google
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="col-12 col-sm-6">
+                <button mat-stroked-button class="w-100 d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="/assets/images/svgs/facebook-icon.svg" alt="facebook" width="40" class="m-r-4" />
+                    Register with FB
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="or-border m-t-30 m-b-30">or Register with</div>
+
+            <mat-stepper #stepper class="dubai-main-road">
+              <mat-step [stepControl]="firstFormGroup">
+                <form class="m-t-24" [formGroup]="firstFormGroup">
+                  <ng-template matStepLabel>Account</ng-template>
+                  <div>
+                    <!-- input -->
+                    <mat-label class="f-s-14 f-w-600 d-block m-b-16">Name </mat-label>
+                    <mat-form-field appearance="outline" class="w-100">
+                      <input matInput formControlName="firstCtrl" required />
+                    </mat-form-field>
+                    <!-- input -->
+                    <mat-label class="f-s-14 f-w-600 d-block m-b-16">Email </mat-label>
+                    <mat-form-field appearance="outline" class="w-100">
+                      <input matInput formControlName="firstCtrl" required type="email" />
+                    </mat-form-field>
+                    <!-- input -->
+                    <mat-label class="f-s-14 f-w-600 d-block m-b-16">Password
+                    </mat-label>
+                    <mat-form-field appearance="outline" class="w-100">
+                      <input matInput formControlName="firstCtrl" required type="password" />
+                    </mat-form-field>
+                  </div>
+                  <div class="text-right">
+                    <button mat-flat-button matStepperNext>Next</button>
+                  </div>
+                </form>
+              </mat-step>
+              <mat-step [stepControl]="secondFormGroup">
+                <form class="m-t-24" [formGroup]="secondFormGroup">
+                  <ng-template matStepLabel>Profile</ng-template>
+                  <div>
+                    <!-- input -->
+                    <mat-label class="f-s-14 f-w-600 d-block m-b-16">First Name
+                    </mat-label>
+                    <mat-form-field appearance="outline" class="w-100">
+                      <input matInput formControlName="secondCtrl" required />
+                    </mat-form-field>
+                    <!-- input -->
+                    <mat-label class="f-s-14 f-w-600 d-block m-b-16">Last Name
+                    </mat-label>
+                    <mat-form-field appearance="outline" class="w-100">
+                      <input matInput formControlName="secondCtrl" required />
+                    </mat-form-field>
+                    <!-- input -->
+                    <mat-label class="f-s-14 f-w-600 d-block m-b-16">Address
+                    </mat-label>
+                    <mat-form-field appearance="outline" class="w-100">
+                      <textarea rows="5" matInput formControlName="secondCtrl" required></textarea>
+                    </mat-form-field>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <button mat-flat-button class="bg-error text-white" matStepperPrevious>
+                      Back
+                    </button>
+                    <button mat-flat-button matStepperNext>Next</button>
+                  </div>
+                </form>
+              </mat-step>
+              <mat-step>
+                <ng-template matStepLabel>Finish</ng-template>
+                <h4 class="mat-headline-6 m-t-24">Terms and condition</h4>
+                <p class="m-t-8 f-s-14">
+                  Sard about this site or you have been to it, but you cannot figure out
+                  what it is or what it can do. MTA web directory isSard about this site
+                  or you have been to it, but you cannot figure out what it is or what
+                  it can do. MTA web directory is
+                </p>
+                <mat-checkbox checked color="primary">Agree with terms?</mat-checkbox>
+                <div class="d-flex justify-content-between m-t-16">
+                  <button mat-flat-button class="bg-error text-white" matStepperPrevious>
+                    Back
+                  </button>
+                  <button mat-flat-button (click)="stepper.reset()">Finish</button>
+                </div>
+              </mat-step>
+            </mat-stepper>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-6">
+    <div class="blank-layout-container justify-content-center align-items-center bg-light2">
+      <div class="position-relative row w-100 h-100 bg-gredient justify-content-center align-items-center">
+        <div class="text-center w-100">
+          <a [routerLink]="['/dashboard']">
+            <img src="./assets/images/logos/logo.png" class="align-middle m-2" alt="logo" />
+          </a>
+        </div>
+        <mat-card class="cardWithShadow ms1">
+          <mat-card-content class="p-32">
+            <div class="m-t-12 m-b-12">Learn more about RFGB</div>
+            <h4 class="m-b-12">www.rfgbpl.com</h4>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

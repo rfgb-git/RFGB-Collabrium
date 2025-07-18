@@ -1,0 +1,142 @@
+<div class="row login-register-bar">
+  <div class="col-lg-6">
+
+    <div class="blank-layout-container justify-content-center align-items-center bg-light bg-left">
+      <div class="position-relative row w-100 h-100 bg-gredient justify-content-center">
+        <mat-card class="cardWithShadow  ">
+          <mat-card-content class="p-32">
+            <div class="text-left m-t-20 m-b-12 dashboard-a-head">
+              <a [routerLink]="['/dashboard']" class="d-flex">
+                <i class="iconify icon-20 d-flex" data-icon="iconamoon:arrow-left-2-light"></i> Back to Dashboard
+              </a>
+            </div>
+            <div class="text-left dashboard-bar1">
+              <h1>Sign In</h1>
+              <p>Enter your email and password to sign in!</p>
+            </div>
+            <div class="row m-t-12 custom-row">
+              <div class="col-12 col-sm-6">
+                <button mat-stroked-button class="w-100">
+                  <div class="d-flex align-items-center">
+                    <img src="/assets/images/svgs/google-icon.svg" alt="google" width="16" class="m-r-8" />
+                    <span>
+                      Sign in with Google
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="col-12 col-sm-6">
+                <button mat-stroked-button class="w-100 d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="/assets/images/svgs/facebook-icon.svg" alt="facebook" width="40" class="m-r-4" />
+                    Sign in with FB
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="or-border m-t-30 m-b-30">or sign in with</div>
+
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+              <mat-tab label="Already you have Vendor ID">
+                <div class="f-s-14 p-16 rounded m-t-12">
+                  <form class="">
+                    <div class="row">
+                      <div class="col-lg-12"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter ERP Vendor ID</mat-label>
+                        <mat-form-field appearance="outline" class="w-100" color="primary">
+                          <input matInput />
+                        </mat-form-field>
+                      </div>
+                       
+                      <div class="col-lg-6"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter your OTP</mat-label>
+                        <mat-form-field appearance="outline" class="w-100" color="primary">
+                          <input matInput />
+                        </mat-form-field>
+                      </div>
+                      <div class="col-lg-6">
+                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
+                        <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100">
+                          Send OTP
+                        </a>
+                      </div>
+                      <div class="col-lg-12">
+                        OTP Sent to your registered Mail Id
+                      </div>
+                      <div class="col-lg-6">
+                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
+                        <a [routerLink]="['/ui-components/supplierrequest']" mat-flat-button color="primary" class="w-100">
+                          Submit & SignIn
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </mat-tab>
+              <mat-tab label="New to RFGB?">
+                <div class="f-s-14 p-16 rounded m-t-12">
+                  <form class="">
+                    <div class="row">
+                      <div class="col-lg-6"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter Your GST
+                          Number</mat-label>
+                        <mat-form-field appearance="outline" class="w-100" color="primary">
+                          <input matInput />
+                        </mat-form-field>
+                      </div>
+                      <div class="col-lg-6"> <mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter Mobile or Mail
+                          ID</mat-label>
+                        <mat-form-field appearance="outline" class="w-100" color="primary">
+                          <input matInput />
+                        </mat-form-field>
+                      </div>
+                      <div class="col-lg-6"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter your OTP</mat-label>
+                        <mat-form-field appearance="outline" class="w-100" color="primary">
+                          <input matInput />
+                        </mat-form-field>
+                      </div>
+                      <div class="col-lg-6">
+                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
+                        <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100">
+                          Send OTP
+                        </a>
+                      </div>
+                      <div class="col-lg-12">
+                        OTP Sent to your registered Mail Id
+                      </div>
+                      <div class="col-lg-6">
+                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
+                        <a [routerLink]="['/authentication/register']" mat-flat-button color="primary" class="w-100">
+                          Submit & SignIn
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="blank-layout-container justify-content-center align-items-center bg-light2">
+      <div class="position-relative row w-100 h-100 bg-gredient justify-content-center align-items-center">
+        <div class="text-center w-100">
+          <a [routerLink]="['/dashboard']">
+            <img src="./assets/images/logos/logo.png" class="align-middle m-2" alt="logo" />
+          </a>
+        </div>
+        <mat-card class="cardWithShadow ms1">
+          <mat-card-content class="p-32">
+            <div class="m-t-12 m-b-12">Learn more about RFGB</div>
+            <h4 class="m-b-12">www.rfgbpl.com</h4>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>

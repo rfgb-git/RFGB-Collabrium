@@ -1,0 +1,72 @@
+<app-topstrip></app-topstrip>
+<mat-sidenav-container class="mainWrapper blue_theme light-theme" autosize autoFocus dir="ltr">
+  <!-- ============================================================== -->
+  <!-- Vertical Sidebar -->
+  <!-- ============================================================== -->
+  <mat-sidenav #leftsidenav [mode]="isOver ? 'over' : 'side'" [opened]="!isOver"
+    (openedChange)="onSidenavOpenedChange($event)" (closedStart)="onSidenavClosedStart()" class="sidebarNav">
+    <div class="flex-layout">
+      <app-sidebar (toggleMobileNav)="sidenav.toggle()" [showToggle]="isOver"></app-sidebar>
+      <ng-scrollbar class="position-relative" style="height: 100%">
+        <mat-nav-list class="sidebar-list">
+          @for(item of navItems; track item) {
+          <app-nav-item [item]="item" (notify)="sidenav.toggle()">
+          </app-nav-item>
+          }
+        </mat-nav-list>
+      </ng-scrollbar>
+      <div class="p-24 m-t-auto profile-bar bg-light-secondary pbar2">
+        <div class="d-flex align-items-center rounded pbar2-inner"><img src="/assets/images/profile/1.webp"
+            width="40" class="rounded-circle">
+          <div class="m-l-16">
+            <h4 class="f-w-600">Udhay</h4><span class="f-s-12">Developer</span>
+          </div>
+          <div class="m-l-auto"><a mat-icon-button=""
+              class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base d-flex justify-content-center mat-unthemed"
+              mat-ripple-loader-class-name="mat-mdc-button-ripple" mat-ripple-loader-centered=""
+              href="/authentication/login"><span
+                class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span><i-tabler name="power"
+                class="text-primary icon-18 d-flex" _nghost-ng-c1247779758=""><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M7 6a7.75 7.75 0 1 0 10 0"></path>
+                  <path d="M12 4l0 8"></path>
+                </svg></i-tabler><span class="mat-focus-indicator"></span><span
+                class="mat-mdc-button-touch-target"></span><span class="mat-ripple mat-mdc-button-ripple"></span></a>
+          </div>
+        </div>
+        <div class="logout-btn-foot">
+          <a mat-flat-button
+            href="#"
+            target="_blank" class="d-flex justify-content-center bg-secondary">
+            Logout
+          </a>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <!-- ============================================================== -->
+  <!-- Main Content -->
+  <!-- ============================================================== -->
+  <mat-sidenav-content class="contentWrapper" #content>
+    <!-- ============================================================== -->
+    <!-- VerticalHeader -->
+    <!-- ============================================================== -->
+
+    <app-header [showToggle]="!isOver" (toggleMobileNav)="sidenav.toggle()"></app-header>
+
+    <main class="pageWrapper maxWidth">
+      <!-- ============================================================== -->
+      <!-- Outlet -->
+      <!-- ============================================================== -->
+      <router-outlet></router-outlet>
+    </main>
+
+    <div class="f-s-14 text-center footer-bar">
+      Design & Developed by <a class="text-decoration-none" href="https://rfgbpl.com/"
+        target="_blank">www.rfgbpl.com</a>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

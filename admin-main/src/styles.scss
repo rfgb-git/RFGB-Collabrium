@@ -1,0 +1,161 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+a.logodark img {
+    width: 100%;
+}
+.login-register-r, .bg-light2 { 
+    background-color: #090f37;
+    background: url(assets/images/bg1.png) right top no-repeat;
+    width: 100%;
+    background-size: cover;  
+    border-radius: 0 0 0 100px;
+}
+mat-card.mat-mdc-card.mdc-card.cardWithShadow.ms1 { 
+    width: 75%;
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #fff;
+    text-align: center;
+}
+.row.login-register-bar, .login-register-bar {
+    /* margin: 0 !important; */
+    background: #f2f6fa;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding: 0 !important;
+    height: 100vh !important;
+}
+.blank-layout-container {
+    height: 100% !important; 
+}
+.row.login-register-bar .col-lg-6:nth-child(2) {
+    padding: 0;
+}
+.dashboard-a-head a { 
+    text-decoration: none;
+    font-size: 15px;
+}
+.dashboard-bar1 { 
+    margin: 30px 0;
+    padding: 0;
+}
+.dashboard-bar1 p { 
+    margin: 0;
+    padding: 20px 0 0;
+    color: #999;
+    font-size: 13px;
+}
+
+.login-register-bar mat-card.mat-mdc-card.mdc-card.cardWithShadow {
+    width: 80%;
+    padding: 0;
+    background: transparent;
+    box-shadow: unset;
+}
+.m-b-30 { margin-bottom: 30px; }
+
+.login-register-bar .bg-light.bg-left { 
+    // overflow-y: auto;
+}
+.logout-btn-foot {
+    width: 100%;
+    
+}
+.profile-bar.pbar2 { 
+    margin: 20px;
+}
+.profile-bar.pbar2 .pbar2-inner {
+    padding: 0 0 15px !important;
+}
+mat-stepper.dubai-main-road.mat-stepper-horizontal.mat-stepper-label-position-end.mat-stepper-animations-enabled {
+    background: transparent;
+    border: 1px solid #8cc63c;
+
+}
+.pageWrapper.maxWidth { 
+    max-width: 99% !important;
+}
+.breadcrumb {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.breadcrumb-item {
+    padding: 0 10px 0 0;
+}
+.breadcrumb-item a {
+    text-decoration: none;
+    font-size: 14px;
+}
+.breadcrumb-main .bb-box { max-height: 150px; }
+html .bg-dark {
+    
+    border-top: 5px solid rgb(140, 198, 60);
+}
+.mat-drawer-transition .mat-drawer-content { background: #f2f6fa !important;}
+// .branding {
+//     background: linear-gradient(90deg, #001138 0%, #001E66 100%);
+// }
+.bg-button-m {
+    border: 0;
+    outline: none;
+    padding: 5px 15px;
+    color: #fff;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button.mat-mdc-menu-trigger.live-preview-drop.supplier-bar-menu {
+    border: 0;
+    outline: none;
+}
+button.mat-mdc-menu-trigger.live-preview-drop.supplier-bar-menu:hover {
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #8cc63c;
+}
+.footer-bar {
+    color: #8cc63c;
+    background: linear-gradient(90deg, #001138 0%, #001E66 100%);
+    padding: 18px 0;
+}
+.footer-bar a {
+    color: #fff;
+    
+}
+a.bg-gredient.mdc-button.mdc-button--unelevated.mat-mdc-unelevated-button.mat-unthemed.mat-mdc-button-base:hover {
+    background: #5f8827;
+}
+a.bg-secondary:hover {
+    background: #339bd5 !important;
+}
+table .table-main-all {
+
+}
+table.table-main-all tr th {
+     padding: 20px 10px !important; text-align: left !important;
+     border-bottom: 1px solid #ddd !important;
+     background: #f7f7f7;
+}
+table.table-main-all tr td {
+     padding: 15px 10px !important; text-align: left !important;
+      border-bottom: 1px solid #ddd !important;
+}
+.border-radius-10 { border-radius: 10px; }
+.border-radius-5 { border-radius: 5px; }
+.border-radius-3 { border-radius: 3px; }
+.border-radius-20 { border-radius: 20px; }
+
+

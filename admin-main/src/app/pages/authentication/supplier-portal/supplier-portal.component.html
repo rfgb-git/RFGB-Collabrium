@@ -1,0 +1,76 @@
+<div class="row login-register-bar">
+    <div class="col-lg-6">
+
+        <div class="blank-layout-container justify-content-center align-items-center bg-light bg-left">
+            <div class="position-relative row w-100 h-100 bg-gredient justify-content-center">
+                <mat-card class="cardWithShadow  ">
+                    <mat-card-content class="p-32">
+                        <div class="text-left m-t-20 m-b-12 dashboard-a-head">
+                            <a [routerLink]="['/dashboard']" class="d-flex">
+                                <i class="iconify icon-20 d-flex" data-icon="iconamoon:arrow-left-2-light"></i> Back to
+                                Dashboard
+                            </a>
+                        </div>
+                        <div class="text-left dashboard-bar1">
+                            <h1 class="d-flex align-items-center"><i class="iconify icon-40 d-flex f-s-21" data-icon="streamline-ultimate:common-file-give-hand-3"></i>&nbsp;&nbsp;Supplier Portal</h1>
+                            <p>Enter your email and password to sign in!</p>
+                        </div>
+
+
+                        <div class="f-s-14 rounded m-t-12">
+                            <form class="">
+                                <div class="row">
+                                    <div class="col-lg-12"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Distribution ID</mat-label>
+                                        <mat-form-field appearance="outline" class="w-100" color="primary">
+                                            <input matInput />
+                                        </mat-form-field>
+                                    </div>
+                                     
+                                    <div class="col-lg-12"> <mat-label
+                                            class="f-s-14 f-w-600 m-b-12 d-block">Password</mat-label>
+                                        <mat-form-field appearance="outline" class="w-100" color="primary">
+                                            <input matInput type="password" />
+                                        </mat-form-field>
+                                    </div>
+                                       
+                                    <div class="col-lg-4 ">
+                                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
+                                        <a [routerLink]="['/authentication/register']" mat-flat-button color="primary"
+                                            class="w-100">
+                                            SignIn
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
+                                        <a [routerLink]="['/']" mat-flat-button color="primary"
+                                            class="w-100 bg-error">
+                                            Cancel
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4"></div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="blank-layout-container justify-content-center align-items-center bg-light2">
+            <div class="position-relative row w-100 h-100 bg-gredient justify-content-center align-items-center">
+                <div class="text-center w-100">
+                    <a [routerLink]="['/dashboard']">
+                        <img src="./assets/images/logos/logo.png" class="align-middle m-2" alt="logo" />
+                    </a>
+                </div>
+                <mat-card class="cardWithShadow ms1">
+                    <mat-card-content class="p-32">
+                        <div class="m-t-12 m-b-12">Learn more about RFGB</div>
+                        <h4 class="m-b-12">www.rfgbpl.com</h4>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
