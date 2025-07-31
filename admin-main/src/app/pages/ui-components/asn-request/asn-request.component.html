@@ -1,0 +1,599 @@
+<div class="breadcrumb-main">
+    <div class="bg-light-primary rounded p-y-30 p-x-24 m-b-30 overflow-hidden ng-star-inserted bb-box">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- <h4 class="page-title m-0 f-s-20 f-w-600 m-b-16">ASN</h4> -->
+                <div class="d-flex align-items-center overflow-hidden">
+                    <ul class="breadcrumb align-items-center">
+                        <li class="breadcrumb-item ng-star-inserted" tabindex="0"><a href="/dashboard">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item ng-star-inserted">
+                            <i class="iconify icon-20 d-flex" data-icon="ri:arrow-right-double-line"></i>
+                        </li>
+                        <li class="breadcrumb-item active f-s-14 ng-star-inserted">ASN Dashboard</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 text-right position-relative">
+                <div class="breadcrumb-icon">
+                    <img src="/assets/images/breadcrumb/ChatBc.png" alt="breadcrumb" width="165">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<mat-tab-group>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <div class="d-flex align-items-center">
+                <mat-icon>
+                    <i-tabler name="phone" class="icon-20 m-r-8"></i-tabler>
+                </mat-icon>
+            </div>
+            Item One
+        </ng-template>
+        <div class="bg-light-primary f-s-14 p-16 rounded m-t-12">
+            Content 1
+        </div>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <div class="d-flex align-items-center">
+                <mat-icon>
+                    <i-tabler name="heart" class="icon-20 m-r-8"></i-tabler>
+                </mat-icon>
+            </div>
+            Item Two
+        </ng-template>
+        <div class="bg-light-primary f-s-14 p-16 rounded m-t-12">
+            Content 2
+        </div>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <div class="d-flex align-items-center">
+                <mat-icon>
+                    <i-tabler name="user" class="icon-20 m-r-8"></i-tabler>
+                </mat-icon>
+            </div>
+            Item Three
+        </ng-template>
+        <div class="bg-light-primary f-s-14 p-16 rounded m-t-12">
+            Content 3
+        </div>
+    </mat-tab>
+</mat-tab-group>
+<mat-stepper #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <form class="m-t-24" [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>ASN Dashboard</ng-template>
+            <div>
+                <table class="mat-mdc-table mdc-data-table__table cdk-table w-100 table-main-all">
+                    <thead class="ng-star-inserted">
+                        <tr class="mat-mdc-header-row mdc-data-table__header-row cdk-header-row ng-star-inserted">
+                            <th
+                                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell f-w-600 mat-subtitle-1 f-s-14 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                S.No </th>
+                            <th
+                                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell f-w-600 mat-subtitle-1 f-s-14 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                Purchase Order </th>
+                            <th
+                                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell f-w-600 mat-subtitle-1 f-s-14 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                PO Line Item</th>
+
+                            <th
+                                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell f-w-600 mat-subtitle-1 f-s-14 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                Item Description </th>
+                            <th
+                                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell f-w-600 mat-subtitle-1 f-s-14 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                PO Qty </th>
+                            <th
+                                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell f-w-600 mat-subtitle-1 f-s-14 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                ASN Qty </th>
+                            <th
+                                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell f-w-600 mat-subtitle-1 f-s-14 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                Status</th>
+                            <th
+                                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell f-w-600 mat-subtitle-1 f-s-14 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                View</th>
+                        </tr><!---->
+                    </thead>
+                    <tbody class="mdc-data-table__content ng-star-inserted">
+
+                        <tr class="mat-mdc-row mdc-data-table__row cdk-row ng-star-inserted">
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-name mat-column-name ng-star-inserted">
+                                ID 1</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell p-l-0 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                PO-1
+                            </td>
+
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-priority mat-column-priority ng-star-inserted">
+                                <span class="bg-light-primary rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">
+                                    PO-1-001 </span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                Mat-A</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                200</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <span
+                                    class="bg-light-success text-success rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">120</span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <span
+                                    class="bg-light-warning text-warning rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">80</span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <button mat-flat-button matStepperNext>Partial Delivered</button>
+                            </td>
+                        </tr>
+                        <tr class="mat-mdc-row mdc-data-table__row cdk-row ng-star-inserted">
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-name mat-column-name ng-star-inserted">
+                                ID 2</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell p-l-0 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                PO-2
+                            </td>
+
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-priority mat-column-priority ng-star-inserted">
+                                <span class="bg-light-primary rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">
+                                    PO-1-002 </span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                Mat-B</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                300</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <span
+                                    class="bg-light-success text-success rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">100</span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <span
+                                    class="bg-light-warning text-warning rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">200</span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <button mat-flat-button matStepperNext>Partial Delivered</button>
+                            </td>
+                        </tr>
+                        <tr class="mat-mdc-row mdc-data-table__row cdk-row ng-star-inserted">
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-name mat-column-name ng-star-inserted">
+                                ID 3</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell p-l-0 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                PO-3
+                            </td>
+
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-priority mat-column-priority ng-star-inserted">
+                                <span class="bg-light-primary rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">
+                                    PO-2-001 </span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                Mat-D</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                500</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <span
+                                    class="bg-light-success text-success rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">0</span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <span
+                                    class="bg-light-warning text-warning rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">500</span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <button mat-flat-button matStepperNext class="bg-secondary">Open</button>
+                            </td>
+                        </tr>
+                        <tr class="mat-mdc-row mdc-data-table__row cdk-row ng-star-inserted">
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-name mat-column-name ng-star-inserted">
+                                ID 4</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell p-l-0 cdk-column-assigned mat-column-assigned ng-star-inserted">
+                                PO-4
+                            </td>
+
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-priority mat-column-priority ng-star-inserted">
+                                <span class="bg-light-primary rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">
+                                    PO-3-001 </span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                Mat-01</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                1000</td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <span
+                                    class="bg-light-success text-success rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">0</span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <span
+                                    class="bg-light-warning text-warning rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted">1000</span>
+                            </td>
+                            <td
+                                class="mat-mdc-cell mdc-data-table__cell cdk-cell f-s-14 cdk-column-budget mat-column-budget ng-star-inserted">
+                                <button mat-flat-button matStepperNext class="bg-secondary">Open</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+            <div class="text-right m-t-24">
+                <button mat-flat-button matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+        <form class="m-t-24" [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Profile</ng-template>
+            <div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Request ID
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="*******" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Requested Status
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="Approved" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Vendor ID
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="ID1" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Vendor Name
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="Jagdeesh" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Address
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="150 Foot Ring Road" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Pincode
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="630012" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">City
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="Jackson" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Landmark
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="Nr. wall street" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">GST Number
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="*****2323***0987" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Vendor category
+                                </mat-label>
+                            </div>
+                            <div class="col-sm-12">
+                                <mat-radio-group aria-label="Select an option" class="m-t-8">
+                                    <mat-radio-button value="1" color="primary">Category 1</mat-radio-button>
+                                    <mat-radio-button value="2" color="primary">Category 2</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="row m-t-12">
+                                    <div class="col-sm-12">
+                                        <!-- input -->
+                                        <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Bank Details - Card
+                                            Number</mat-label>
+                                        <mat-form-field appearance="outline" class="w-100" color="primary">
+                                            <input matInput type="text" placeholder="123 200 540 620" />
+                                        </mat-form-field>
+                                        <div class="row m-t-12">
+                                            <div class="col-sm-6">
+                                                <!-- input -->
+                                                <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Name</mat-label>
+                                                <mat-form-field appearance="outline" class="w-100" color="primary">
+                                                    <input matInput type="text" placeholder="John Deo" />
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <!-- input -->
+                                                <mat-label class="f-s-14 f-w-600 m-b-8 d-block">Exp. Date</mat-label>
+                                                <mat-form-field appearance="outline" class="w-100" color="primary">
+                                                    <input matInput type="text" placeholder="MM/YY" />
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <!-- input -->
+                                                <mat-label class="f-s-14 f-w-600 m-b-8 d-block">CCV Code</mat-label>
+                                                <mat-form-field appearance="outline" class="w-100" color="primary">
+                                                    <input matInput type="text" placeholder="XXX" />
+                                                    <mat-icon matSuffix class="op-5">
+                                                        <i-tabler name="info-square-rounded"
+                                                            class="icon-20 d-flex"></i-tabler>
+                                                    </mat-icon>
+                                                </mat-form-field>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Vendor Certificates
+                        </mat-label>
+                        <mat-form-field appearance="outline" class="w-100">
+                            <input matInput formControlName="secondCtrl" placeholder="Yes" required />
+                        </mat-form-field>
+                    </div>
+                    <div class="col-lg-6 col-sm-6"><mat-label class="f-s-14 f-w-600 d-block m-b-16">ISO details
+                        </mat-label>
+                        <mat-form-field appearance="outline" class="w-100">
+                            <input matInput formControlName="secondCtrl" placeholder="123 456 789" required />
+                        </mat-form-field>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 text-right">
+
+                        <button mat-flat-button matStepperNext>
+                            Approve
+                        </button>&nbsp;&nbsp;
+                        <button mat-flat-button class="bg-light-warning text-white" matStepperNext>
+                            Hold
+                        </button>&nbsp;&nbsp;
+                        <button mat-flat-button class="bg-error text-white" matStepperNext>
+                            Reject
+                        </button>&nbsp;&nbsp;
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Finish</ng-template>
+        <div class="task-list-container">
+            <div class="connect-sorting bg-light-success border-radius-10 m-b-16">
+                <div cdkdroplist="" class="cdk-drop-list p-24" id="cdk-drop-list-6">
+                    <mat-card cdkdrag=""
+                        class="mat-mdc-card mdc-card cdk-drag cardWithShadow img-task m-b-15 overflow-hidden ng-star-inserted">
+                        <div class="align-items-center justify-content-between p-x-12 p-y-10">
+                            <h4 class="mat-headline-6 m-t-24">Approval Process</h4>
+                            <p class="m-t-8 f-s-14">
+                                Distribution ID XXXXXXXXX is generated and login credentials sent to vendor's registered
+                                email ID
+                            </p>
+                            <p class="m-t-8 f-s-14"><button mat-flat-button>Finish</button></p>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+
+            <div class="connect-sorting bg-light-secondary border-radius-10 m-b-16">
+                <div cdkdroplist="" class="cdk-drop-list p-24" id="cdk-drop-list-6">
+                    <mat-card cdkdrag=""
+                        class="mat-mdc-card mdc-card cdk-drag cardWithShadow img-task m-b-15 overflow-hidden ng-star-inserted">
+                        <div class="align-items-center justify-content-between p-x-12 p-y-10">
+                            <h4 class="mat-headline-6 m-t-24 m-b-30">Hold Process</h4>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 d-flex align-items-center">
+                                            <mat-label class="f-s-14 f-w-600 d-block m-b-16">Request ID
+                                            </mat-label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <mat-form-field appearance="outline" class="w-100">
+                                                <input matInput placeholder="XXXXXX XXXX" />
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 d-flex align-items-center">
+                                            <mat-label class="f-s-14 f-w-600 d-block m-b-16">Reqested Additional
+                                                information
+                                            </mat-label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <mat-form-field appearance="outline" class="w-100">
+                                                <textarea matInput placeholder=""></textarea>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="m-t-8 f-s-14">
+                                Distribution ID XXXXXXXXX is generated and login credentials sent to vendor's registered
+                                email ID
+                            </p>
+                            <p class="m-t-8 f-s-14"><button mat-flat-button>Finish</button></p>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+
+            <div class="connect-sorting bg-light-warning border-radius-10 m-b-16">
+                <div cdkdroplist="" class="cdk-drop-list p-24" id="cdk-drop-list-6">
+                    <mat-card cdkdrag=""
+                        class="mat-mdc-card mdc-card cdk-drag cardWithShadow img-task m-b-15 overflow-hidden ng-star-inserted">
+                        <div class="align-items-center justify-content-between p-x-12 p-y-10">
+                            <h4 class="mat-headline-6 m-t-24 m-b-30">Rejection Process</h4>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 d-flex align-items-center">
+                                            <mat-label class="f-s-14 f-w-600 d-block m-b-16">Request ID
+                                            </mat-label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <mat-form-field appearance="outline" class="w-100">
+                                                <input matInput placeholder="XXXXXX XXXX" />
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 d-flex align-items-center">
+                                            <mat-label class="f-s-14 f-w-600 d-block m-b-16">Reason for the Rejection
+                                            </mat-label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <mat-form-field appearance="outline" class="w-100">
+                                                <textarea matInput placeholder=""></textarea>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="m-t-8 f-s-14">
+                                Distribution ID XXXXXXXXX is generated and login credentials sent to vendor's registered
+                                email ID
+                            </p>
+                            <p class="m-t-8 f-s-14"><button mat-flat-button>Finish</button></p>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+
+        </div>
+
+        <h4 class="mat-headline-6 m-t-24">Terms and condition</h4>
+        <p class="m-t-8 f-s-14">
+            Sard about this site or you have been to it, but you cannot figure out
+            what it is or what it can do. MTA web directory isSard about this site
+            or you have been to it, but you cannot figure out what it is or what
+            it can do. MTA web directory is
+        </p>
+        <mat-checkbox checked color="primary">Agree with terms?</mat-checkbox>
+        <div class="d-flex justify-content-between m-t-16">
+            <button mat-flat-button class="bg-error text-white" matStepperPrevious>
+                Back
+            </button>
+            <button mat-flat-button (click)="stepper.reset()">Click & Submit</button>
+        </div>
+    </mat-step>
+</mat-stepper>

@@ -10,6 +10,9 @@ import { AppFormsComponent } from './forms/forms.component';
 import { AppTablesComponent } from './tables/tables.component';
 import { AppSupplierrequestComponent } from './supplierrequest/supplierrequest.component';
 import { AppBuyerBoardingComponent } from './buyer-boarding/buyer-boarding.component';
+import { AppAsnRequestComponent } from './asn-request/asn-request.component';
+import { AppAsnDashboardComponent } from './asn-dashboard/asn-dashboard.component';
+import { AppAsnComponent } from './asn/asn.component';
 
 export const UiComponentsRoutes: Routes = [
   {
@@ -50,6 +53,18 @@ export const UiComponentsRoutes: Routes = [
       {
         path: 'buyerboarding',
         component: AppBuyerBoardingComponent,
+      },
+      {
+        path: 'asnrequest',
+        component: AppAsnRequestComponent,
+      },
+      {
+        path: 'asndashboard',
+        component: AppAsnDashboardComponent,
+      },
+      {
+        path: 'asn',
+        component: AppAsnComponent,
       },
     ],
   },

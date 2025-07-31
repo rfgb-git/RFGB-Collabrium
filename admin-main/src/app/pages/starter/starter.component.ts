@@ -6,7 +6,7 @@ import { AppMonthlyEarningsComponent } from 'src/app/components/monthly-earnings
 import { AppRecentTransactionsComponent } from 'src/app/components/recent-transactions/recent-transactions.component';
 import { AppProductPerformanceComponent } from 'src/app/components/product-performance/product-performance.component';
 import { AppBlogCardsComponent } from 'src/app/components/blog-card/blog-card.component';
- 
+ import { MatRadioModule } from '@angular/material/radio';
 
 @Component({
   selector: 'app-starter',
@@ -18,6 +18,7 @@ import { AppBlogCardsComponent } from 'src/app/components/blog-card/blog-card.co
     AppRecentTransactionsComponent,
     AppProductPerformanceComponent,
     AppBlogCardsComponent,
+    MatRadioModule,
   ],
   templateUrl: './starter.component.html',
   encapsulation: ViewEncapsulation.None,

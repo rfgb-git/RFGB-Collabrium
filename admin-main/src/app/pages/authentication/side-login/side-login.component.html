@@ -10,168 +10,366 @@
               </a>
             </div>
             <div class="text-left dashboard-bar1">
-              <h1>Already you have Vendor ID</h1>
-              <p>Enter your Vendor ID and OTP to sign in!</p>
+              <h1>Signin Here!</h1>
             </div>
-            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-              <mat-tab label="SignIn">
-                <div class="f-s-14 p-16 rounded m-t-12">
-                  <form>
-                    <div class="row">
-                      <div class="col-sm-12 d-flex align-items-center">
-                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Enter ERP Vendor ID</mat-label>
-                      </div>
-                      <div class="col-sm-12">
-                        <mat-form-field appearance="outline" class="w-100">
-                          <input matInput placeholder="XXXX XXXX" />
-                          <mat-icon matPrefix class="op-5">
-                            <i-tabler name="edit" class="icon-20 d-flex"></i-tabler>
-                          </mat-icon>
-                        </mat-form-field>
-                      </div>
+            <div class="signin-main">
+              <mat-tab-group>
+                <mat-tab>
+                  <ng-template mat-tab-label>
+                    <div class="d-flex align-items-center m-r-10">
+                      <i class="iconify icon-30 d-flex f-w-600 f-s-21"
+                        data-icon="streamline-ultimate-color:delivery-truck-clock"></i>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-12 d-flex align-items-center">
-                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Enter your OTP</mat-label>
-                      </div>
-                      <div class="col-sm-6">
-                        <mat-form-field appearance="outline" class="w-100">
-                          <input matInput placeholder="1234" />
-                          <mat-icon matPrefix class="op-5">
-                            <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
-                          </mat-icon>
-                        </mat-form-field>
-                      </div>
-                      <div class="col-sm-6">
-                        <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100 bg-error">
-                          Send OTP
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <p>OTP Sent to your registered Mail Id</p>
-                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
-                        <div class="d-flex">
-                          <a [routerLink]="['/dashboard']" mat-flat-button color="primary" class="w-auto">
-                            SignIn
-                          </a>&nbsp;&nbsp;
-                          <a [routerLink]="['/dashboard']" mat-flat-button color="primary"
-                            class="w-auto bg-light-warning">
-                            Cancel
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </mat-tab>
-              <mat-tab label="SignUp">
-                <div class="f-s-14 p-16 rounded m-t-12">
-                  <form>
-                    
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="row">
-                          <div class="col-sm-12 d-flex align-items-center">
-                            <mat-label class="f-s-14 f-w-600 d-block m-b-16">Email</mat-label>
-                          </div>
+                    Vendor
+                  </ng-template>
+                  <div class="signin-inner">
+                    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+                      <mat-tab label="Login for Existing Vendor">
+                        <div class="f-s-14 p-16 rounded">
+                          <form>
+                            <div class="row">
+                              <div class="col-sm-6 align-items-center">
+                                <div class="w-100">
+                                  <p><b>Enter Distribution ID</b></p>
+                                </div>
+                                <div class="w-100">
+                                  <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="123456" />
+                                    <mat-icon matPrefix class="op-5">
+                                      <i-tabler name="id" class="icon-20 d-flex"></i-tabler>
+                                    </mat-icon>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 align-items-center">
+                                <div class="w-100">
+                                  <p><b>Enter Password</b></p>
+                                </div>
+                                <div class="w-100">
+                                  <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="XXXX XXXX" />
+                                    <mat-icon matPrefix class="op-5">
+                                      <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
+                                    </mat-icon>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <div>
+                                  <a [routerLink]="['/']"
+                                    class="bg-light-error text-error bg-light-error2 rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted w-100">
+                                    Click to Send OTP to your registered Mail Id
+                                  </a>
+                                </div>
+                              </div>
 
-                          <div class="col-sm-12">
-                            <mat-form-field appearance="outline" class="w-100">
-                              <input matInput placeholder="xxx xxx" type="email" />
-                              <mat-icon matPrefix class="op-5">
-                                <i-tabler name="mail" class="icon-20 d-flex"></i-tabler>
-                              </mat-icon>
-                            </mat-form-field>
-                          </div>
+                              <div class="col-sm-12 d-flex align-items-center">
+                                <p><b>Enter your OTP</b></p>
+                              </div>
+                              <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                  <input matInput placeholder="1234" />
+                                  <mat-icon matPrefix class="op-5">
+                                    <i-tabler name="edit" class="icon-20 d-flex"></i-tabler>
+                                  </mat-icon>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="d-flex">
+                                  <a [routerLink]="['/dashboard']" mat-flat-button color="primary"
+                                    class="w-auto border-radius-0">
+                                    SignIn
+                                  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a [routerLink]="['/dashboard']" mat-flat-button color="warning"
+                                    class="w-auto bg-dark border-radius-0">
+                                    Cancel
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
                         </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="row">
-                          <div class="col-sm-12 d-flex align-items-center">
-                            <mat-label class="f-s-14 f-w-600 d-block m-b-16">GST number</mat-label>
-                          </div>
-                          <div class="col-sm-12">
-                            <mat-form-field appearance="outline" class="w-100">
-                              <input matInput placeholder="xxx xxx" type="gst" />
-                              <mat-icon matPrefix class="op-5">
-                                <i-tabler name="message-2" class="icon-20 d-flex"></i-tabler>
-                              </mat-icon>
-                            </mat-form-field>
-                          </div>
+                      </mat-tab>
+                      <mat-tab label="Register for New Vendor">
+                        <div class="f-s-14 p-16 rounded">
+                          <form>
+                            <div class="row">
+                              <div class="col-sm-6 align-items-center">
+                                <div class="w-100">
+                                  <p><b>Enter ERP Vendor ID</b></p>
+                                </div>
+                                <div class="w-100">
+                                  <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="123456" />
+                                    <mat-icon matPrefix class="op-5">
+                                      <i-tabler name="id" class="icon-20 d-flex"></i-tabler>
+                                    </mat-icon>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 align-items-center">
+                                <div class="w-100">
+                                  <p><b>Enter GST</b></p>
+                                </div>
+                                <div class="w-100">
+                                  <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="XXXX XXXX" />
+                                    <mat-icon matPrefix class="op-5">
+                                      <i-tabler name="message-2" class="icon-20 d-flex"></i-tabler>
+                                    </mat-icon>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <div>
+                                  <a [routerLink]="['/']"
+                                    class="bg-light-error text-error bg-light-error2 rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted w-100">
+                                    Click to Send OTP to your registered Mail Id
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-sm-12 align-items-center">
+                                <p><b>Enter your OTP</b></p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                  <input matInput placeholder="1234" />
+                                  <mat-icon matPrefix class="op-5">
+                                    <i-tabler name="edit" class="icon-20 d-flex"></i-tabler>
+                                  </mat-icon>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Generate your New Password</mat-label>
+                              </div>
+                              <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                  <input matInput placeholder="XXXX XXXX" />
+                                  <mat-icon matPrefix class="op-5">
+                                    <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
+                                  </mat-icon>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Retype your New Password</mat-label>
+                              </div>
+                              <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                  <input matInput placeholder="XXXX XXXX" />
+                                  <mat-icon matPrefix class="op-5">
+                                    <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
+                                  </mat-icon>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="d-flex">
+                                  <a [routerLink]="['/dashboard']" mat-flat-button color="primary"
+                                    class="w-auto border-radius-0">
+                                    Register
+                                  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a [routerLink]="['/dashboard']" mat-flat-button color="warning"
+                                    class="w-auto bg-dark border-radius-0">
+                                    Cancel
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
                         </div>
-                      </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-tab>
+                <mat-tab>
+                  <ng-template mat-tab-label>
+                    <div class="d-flex align-items-center m-r-10">
+                      <i class="iconify icon-30 d-flex f-w-600 f-s-21"
+                        data-icon="streamline-ultimate-color:e-commerce-touch-buy"></i>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-12 d-flex align-items-center">
-                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Enter ERP Vendor ID</mat-label>
-                      </div>
-                      <div class="col-sm-12">
-                        <mat-form-field appearance="outline" class="w-100">
-                          <input matInput placeholder="XXXX XXXX" />
-                          <mat-icon matPrefix class="op-5">
-                            <i-tabler name="edit" class="icon-20 d-flex"></i-tabler>
-                          </mat-icon>
-                        </mat-form-field>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-12 d-flex align-items-center">
-                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Enter your OTP</mat-label>
-                      </div>
-                      <div class="col-sm-6">
-                        <mat-form-field appearance="outline" class="w-100">
-                          <input matInput placeholder="1234" />
-                          <mat-icon matPrefix class="op-5">
-                            <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
-                          </mat-icon>
-                        </mat-form-field>
-                      </div>
-                      <div class="col-sm-6">
-                        <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100 bg-error">
-                          Send OTP
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <p>OTP Sent to your registered Mail Id</p>
-                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
-                        <div class="d-flex">
-                          <a [routerLink]="['/dashboard']" mat-flat-button color="primary" class="w-auto">
-                            SignIn
-                          </a>&nbsp;&nbsp;
-                          <a [routerLink]="['/dashboard']" mat-flat-button color="primary"
-                            class="w-auto bg-light-warning">
-                            Cancel
-                          </a>
+                    Buyer
+                  </ng-template>
+                  <div class="signin-inner">
+                    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+                      <mat-tab label="Login for Existing User">
+                        <div class="f-s-14 p-16 rounded">
+                          <form>
+                            <div class="row">
+                              <div class="col-sm-6 align-items-center">
+                                <div class="w-100">
+                                  <p><b>Enter Distribution ID</b></p>
+                                </div>
+                                <div class="w-100">
+                                  <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="123456" />
+                                    <mat-icon matPrefix class="op-5">
+                                      <i-tabler name="id" class="icon-20 d-flex"></i-tabler>
+                                    </mat-icon>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 align-items-center">
+                                <div class="w-100">
+                                  <p><b>Enter Password</b></p>
+                                </div>
+                                <div class="w-100">
+                                  <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="XXXX XXXX" />
+                                    <mat-icon matPrefix class="op-5">
+                                      <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
+                                    </mat-icon>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <div>
+                                  <a [routerLink]="['/']"
+                                    class="bg-light-error text-error bg-light-error2 rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted w-100">
+                                    Click to Send OTP to your registered Mail Id
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div class="col-sm-12 d-flex align-items-center">
+                                <p><b>Enter your OTP</b></p>
+                              </div>
+                              <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                  <input matInput placeholder="1234" />
+                                  <mat-icon matPrefix class="op-5">
+                                    <i-tabler name="edit" class="icon-20 d-flex"></i-tabler>
+                                  </mat-icon>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="d-flex">
+                                  <a [routerLink]="['/dashboard']" mat-flat-button color="primary"
+                                    class="w-auto border-radius-0">
+                                    SignIn
+                                  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a [routerLink]="['/dashboard']" mat-flat-button color="warning"
+                                    class="w-auto bg-dark border-radius-0">
+                                    Cancel
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
                         </div>
-                      </div>
-                    </div>
-                  </form>                   
-                </div>
-              </mat-tab>
-            </mat-tab-group>
+                      </mat-tab>
+                      <mat-tab label="Register for New User">
+                        <div class="f-s-14 p-16 rounded">
+                          <form>
+                            <div class="row">
+                              <div class="col-sm-6 align-items-center">
+                                <div class="w-100">
+                                  <p><b>Enter ERP Vendor ID</b></p>
+                                </div>
+                                <div class="w-100">
+                                  <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="123456" />
+                                    <mat-icon matPrefix class="op-5">
+                                      <i-tabler name="id" class="icon-20 d-flex"></i-tabler>
+                                    </mat-icon>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 align-items-center">
+                                <div class="w-100">
+                                  <p><b>Enter GST</b></p>
+                                </div>
+                                <div class="w-100">
+                                  <mat-form-field appearance="outline" class="w-100">
+                                    <input matInput placeholder="XXXX XXXX" />
+                                    <mat-icon matPrefix class="op-5">
+                                      <i-tabler name="message-2" class="icon-20 d-flex"></i-tabler>
+                                    </mat-icon>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <div>
+                                  <a [routerLink]="['/']"
+                                    class="bg-light-error text-error bg-light-error2 rounded f-w-600 p-6 p-y-4 f-s-12 ng-star-inserted w-100">
+                                    Click to Send OTP to your registered Mail Id
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-sm-12 align-items-center">
+                                <p><b>Enter your OTP</b></p>
+                                <mat-form-field appearance="outline" class="w-100">
+                                  <input matInput placeholder="1234" />
+                                  <mat-icon matPrefix class="op-5">
+                                    <i-tabler name="edit" class="icon-20 d-flex"></i-tabler>
+                                  </mat-icon>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Generate your New Password</mat-label>
+                              </div>
+                              <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                  <input matInput placeholder="XXXX XXXX" />
+                                  <mat-icon matPrefix class="op-5">
+                                    <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
+                                  </mat-icon>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-12 d-flex align-items-center">
+                                <mat-label class="f-s-14 f-w-600 d-block m-b-16">Retype your New Password</mat-label>
+                              </div>
+                              <div class="col-sm-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                  <input matInput placeholder="XXXX XXXX" />
+                                  <mat-icon matPrefix class="op-5">
+                                    <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
+                                  </mat-icon>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="d-flex">
+                                  <a [routerLink]="['/dashboard']" mat-flat-button color="primary"
+                                    class="w-auto border-radius-0">
+                                    Register
+                                  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a [routerLink]="['/dashboard']" mat-flat-button color="warning"
+                                    class="w-auto bg-dark border-radius-0">
+                                    Cancel
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </mat-tab>
+                    </mat-tab-group>
+                  </div>
+                </mat-tab>
+              </mat-tab-group>
+            </div>
           </mat-card-content>
         </mat-card>
       </div>
     </div>
   </div>
   <div class="col-lg-6">
-    <div class="blank-layout-container justify-content-center align-items-center bg-light2">
-      <div class="position-relative row w-100 h-100 bg-gredient justify-content-center align-items-center">
-        <div class="text-center w-100">
-          <a [routerLink]="['/dashboard']">
-            <img src="./assets/images/logos/logo.png" class="align-middle m-2" alt="logo" />
-          </a>
+    <div class="bg-light-m">
+      <div class="blank-layout-container justify-content-center align-items-center bg-light2">
+        <div class="position-relative row w-100 h-100 bg-gredient justify-content-center align-items-center">
+          <mat-card class="cardWithShadow ms1">
+            <mat-card-content class="p-32">
+              <div class="text-center w-100 login-logo-sec">
+                <a [routerLink]="['/dashboard']">
+                  <img src="./assets/images/logos/logo.png" class="align-middle m-2" alt="logo" />
+                </a>
+              </div>
+              <div class="login-img-sec">
+                <img src="./assets/images/login2.gif" class="align-middle m-2 login-bar" alt="logo" />
+              </div>
+              <div class="login-url-sec">
+                <div class="m-t-12 m-b-12">Learn more about RFGB</div>
+                <h4 class="m-b-12">www.rfgbpl.com</h4>
+              </div>
+            </mat-card-content>
+          </mat-card>
         </div>
-        <mat-card class="cardWithShadow ms1">
-          <mat-card-content class="p-32">
-            <div class="m-t-12 m-b-12">Learn more about RFGB</div>
-            <h4 class="m-b-12">www.rfgbpl.com</h4>
-          </mat-card-content>
-        </mat-card>
       </div>
     </div>
   </div>

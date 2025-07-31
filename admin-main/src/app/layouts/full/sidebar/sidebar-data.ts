@@ -10,15 +10,47 @@ export const navItems: NavItem[] = [
     route: '/dashboard',
   },
   {
-    displayName: 'Buyer Boarding',
+    displayName: 'User Boarding',
     iconName: 'list-details',
     route: '/ui-components/buyerboarding',
   },
   {
-    displayName: 'Supplier Requests',
+    displayName: 'Vendor Requests',
     iconName: 'archive',
     route: '/ui-components/supplierrequest',
   },
+
+  {
+    displayName: 'Vendor ASN PO',
+    iconName: 'ticket',
+    route: '/ui-components/asn',
+  },
+  
+
+  // {
+  //   displayName: 'ASN',
+  //   iconName: 'file-invoice',
+  //   route: '/',
+  //   children: [
+  //     {
+  //       displayName: 'ASN Dashboard',
+  //       iconName: 'dashboard',
+  //       route: '/ui-components/asndashboard',
+  //     },
+  //     {
+  //       displayName: 'ASN Request',
+  //       iconName: 'ticket',
+  //       route: '/ui-components/asnrequest',
+  //     },
+  //   ],
+  // },
+
+
+  // {
+  //   displayName: 'ASN Request',
+  //   iconName: 'archive',
+  //   route: '/authentication/asnrequest',
+  // },
   // {
   //   displayName: 'Buyer Portal',
   //   iconName: 'archive',

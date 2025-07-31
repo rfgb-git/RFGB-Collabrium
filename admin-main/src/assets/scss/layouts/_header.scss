@@ -38,6 +38,7 @@ html .topbar {
   z-index: 12;
   display: flex;
   background: linear-gradient(90deg, #001138 0%, #001E66 100%);
+  border-top: 5px solid rgb(140, 198, 60);
 
   @media (max-width: 991px) {
     flex-direction: column;

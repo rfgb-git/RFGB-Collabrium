@@ -1,110 +1,58 @@
 <div class="app-topstrip bg-dark text-white p-y-16 p-x-24 w-100 d-flex align-items-center justify-content-between">
     <div class=" d-sm-flex align-items-center justify-content-center gap-20">
-         
-            <a href="" target="_blank" class="d-flex align-items-center"><img src="../../../../assets/images/logos/logo.png" alt="" width="150"></a>
-         
+        <a href="" target="_blank" class="d-flex align-items-center"><img src="../../../../assets/images/logos/logo.png"
+                alt="" width="150"></a>
     </div>
     <div class="topstrip-right d-flex align-items-center justify-content-center gap-16">
-        <!-- <a mat-button class="link-hover p-x-0 text-white d-flex" href="#" target="_blank">
+        <!-- <a mat-button class="link-hover p-x-0 text-white d-flex" href="/" target="_blank">
             <div class="d-flex align-items-center gap-8 f-s-14 f-w-400">
                 <i class="iconify icon-20 d-flex" data-icon="hugeicons:user-ai"></i>
-                User
+                Signin
             </div>
         </a> -->
+
         <div class="topstrip-right-inner d-flex justify-content-center align-items-center gap-10">
-            <div class="d-flex justify-content-center align-items-center gap-10">             
-                    <div>
-                        <button class="live-preview-drop d-flex align-items-center gap-4 text-white f-s-14 p-x-16 supplier-bar-menu"
-                            mat-button [matMenuTriggerFor]="beforeMenu">
-                            <div class="d-flex align-items-center gap-6 text-center">
-                                <i class="iconify icon-18 d-flex" data-icon="streamline-ultimate:common-file-give-hand-3"></i>
-                                Supplier
-                                <i class="iconify icon-20 d-flex" data-icon="solar:alt-arrow-down-linear"></i>
-                            </div>
-                        </button>
-                        <mat-menu class="p-x-16 p-y-8 rounded-7" #beforeMenu="matMenu" xPosition="before">
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="streamline-ultimate:e-commerce-touch-buy"></i>
-                                    Supplier Request
-                                </div>
-                            </a>
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="streamline-ultimate:e-commerce-touch-buy"></i>
-                                    Supplier Report
-                                </div>
-                            </a>
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="streamline-ultimate:e-commerce-touch-buy"></i>
-                                    Supplier Approval
-                                </div>
-                            </a>
-                        </mat-menu>
-                    </div>
-                    <div>
-                        <button class="live-preview-drop d-flex align-items-center gap-4 text-white f-s-14 p-x-16"
-                            mat-button [matMenuTriggerFor]="beforeMenu2">
+            <div class="d-flex justify-content-center align-items-center gap-10">
+                <!-- <a [routerLink]="['/authentication/register']"
+                    class="d-flex justify-content-center bg-secondary mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed mat-mdc-button-base border-radius-0">
+                    <i-tabler name="user-plus" class="icon-20 d-flex"></i-tabler> &nbsp;&nbsp;SignIn
+                </a> -->
+                <a [routerLink]="['/authentication/login']"
+                    class="d-flex justify-content-center bg-gredient mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed mat-mdc-button-base border-radius-0">
+                    <i class="iconify icon-20 d-flex" data-icon="hugeicons:user-ai"></i> &nbsp;&nbsp;SignIn
+                </a>
+                <div>
+                    <div class="d-flex align-items-center"> <b>Welcome</b>&nbsp; User! or Vendor! &nbsp;&nbsp;
+                        <button class="live-preview-drop2 d-flex align-items-center gap-4 text-white f-s-14 text-white"
+                            mat-button [matMenuTriggerFor]="beforeMenu4">
                             <div class="d-flex align-items-center gap-6">
-                                <i class="iconify icon-18 d-flex" data-icon="icon-park-outline:buy"></i>
-                                Buyer
-                                <i class="iconify icon-20 d-flex" data-icon="solar:alt-arrow-down-linear"></i>
+                                <img src="/assets/images/profile/1.webp" class="rounded-circle object-cover d-block"
+                                    width="35" />
                             </div>
                         </button>
-                        <mat-menu class="p-x-16 p-y-8 rounded-7" #beforeMenu2="matMenu" xPosition="before">
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="streamline-ultimate:e-commerce-touch-buy"></i>
-                                    Buyer Request
-                                </div>
-                            </a>
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="icons8:buy"></i>
-                                    Buyer Report
-                                </div>
-                            </a>
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="streamline-freehand:e-commerce-click-buy"></i>
-                                    Buyer Approval
-                                </div>
-                            </a>
-                        </mat-menu>
                     </div>
-                    <div>
-                        <button
-                            class="live-preview-drop d-flex align-items-center gap-4 text-white f-s-14 p-x-16 get-pro-btn text-white p-x-16"
-                            mat-button [matMenuTriggerFor]="beforeMenu3">
-                            <div class="d-flex align-items-center gap-6">
-                                <i class="iconify icon-18 d-flex" data-icon="hugeicons:delivery-sent-02"></i>
-                                ASN
-                                <i class="iconify icon-20 d-flex" data-icon="solar:alt-arrow-down-linear"></i>
-                            </div>
+                    <mat-menu class="p-x-16 p-y-8 rounded-7" #beforeMenu4="matMenu" xPosition="before">
+                        <button mat-menu-item>
+                            <mat-icon class="d-flex align-items-center"><i-tabler name="user"
+                                    class="icon-18 d-flex"></i-tabler></mat-icon>My
+                            Profile
                         </button>
-                        <mat-menu class="p-x-16 p-y-8 rounded-7" #beforeMenu3="matMenu" xPosition="before">
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="solar:delivery-outline"></i>
-                                    ASN Request
-                                </div>
-                            </a>
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="carbon:delivery-add"></i>
-                                    ASN Report
-                                </div>
-                            </a>
-                            <a mat-menu-item class="rounded-7" href="#" target="_blank">
-                                <div class="d-flex align-items-center gap-12 f-s-14">
-                                    <i class="iconify icon-18 d-flex" data-icon="carbon:delivery-settings"></i>
-                                    ASN Approval
-                                </div>
-                            </a>
-                        </mat-menu>
-                    </div>
-                 
+                        <button mat-menu-item>
+                            <mat-icon class="d-flex align-items-center"><i-tabler name="mail"
+                                    class="icon-18 d-flex"></i-tabler></mat-icon>My
+                            Account
+                        </button>
+                        <!-- <button mat-menu-item>
+                            <mat-icon class="d-flex align-items-center"><i-tabler name="list-check"
+                                    class="icon-18 d-flex"></i-tabler></mat-icon>My Task
+                        </button> -->
+
+                        <div class="p-x-12 m-t-12">
+                            <a [routerLink]="['/authentication/login']" mat-stroked-button class="w-100">Logout</a>
+                        </div>
+                    </mat-menu>
+
+                </div>
             </div>
         </div>
     </div>
