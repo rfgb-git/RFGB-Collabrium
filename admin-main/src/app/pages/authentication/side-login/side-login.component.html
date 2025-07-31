@@ -1,6 +1,5 @@
 <div class="row login-register-bar">
   <div class="col-lg-6">
-
     <div class="blank-layout-container justify-content-center align-items-center bg-light bg-left">
       <div class="position-relative row w-100 h-100 bg-gredient justify-content-center">
         <mat-card class="cardWithShadow  ">
@@ -11,110 +10,146 @@
               </a>
             </div>
             <div class="text-left dashboard-bar1">
-              <h1>Sign In</h1>
-              <p>Enter your email and password to sign in!</p>
+              <h1>Already you have Vendor ID</h1>
+              <p>Enter your Vendor ID and OTP to sign in!</p>
             </div>
-            <div class="row m-t-12 custom-row">
-              <div class="col-12 col-sm-6">
-                <button mat-stroked-button class="w-100">
-                  <div class="d-flex align-items-center">
-                    <img src="/assets/images/svgs/google-icon.svg" alt="google" width="16" class="m-r-8" />
-                    <span>
-                      Sign in with Google
-                    </span>
-                  </div>
-                </button>
-              </div>
-              <div class="col-12 col-sm-6">
-                <button mat-stroked-button class="w-100 d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <img src="/assets/images/svgs/facebook-icon.svg" alt="facebook" width="40" class="m-r-4" />
-                    Sign in with FB
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="or-border m-t-30 m-b-30">or sign in with</div>
-
             <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-              <mat-tab label="Already you have Vendor ID">
+              <mat-tab label="SignIn">
                 <div class="f-s-14 p-16 rounded m-t-12">
-                  <form class="">
+                  <form>
                     <div class="row">
-                      <div class="col-lg-12"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter ERP Vendor ID</mat-label>
-                        <mat-form-field appearance="outline" class="w-100" color="primary">
-                          <input matInput />
+                      <div class="col-sm-12 d-flex align-items-center">
+                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Enter ERP Vendor ID</mat-label>
+                      </div>
+                      <div class="col-sm-12">
+                        <mat-form-field appearance="outline" class="w-100">
+                          <input matInput placeholder="XXXX XXXX" />
+                          <mat-icon matPrefix class="op-5">
+                            <i-tabler name="edit" class="icon-20 d-flex"></i-tabler>
+                          </mat-icon>
                         </mat-form-field>
                       </div>
-                       
-                      <div class="col-lg-6"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter your OTP</mat-label>
-                        <mat-form-field appearance="outline" class="w-100" color="primary">
-                          <input matInput />
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 d-flex align-items-center">
+                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Enter your OTP</mat-label>
+                      </div>
+                      <div class="col-sm-6">
+                        <mat-form-field appearance="outline" class="w-100">
+                          <input matInput placeholder="1234" />
+                          <mat-icon matPrefix class="op-5">
+                            <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
+                          </mat-icon>
                         </mat-form-field>
                       </div>
-                      <div class="col-lg-6">
-                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
-                        <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100">
+                      <div class="col-sm-6">
+                        <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100 bg-error">
                           Send OTP
                         </a>
                       </div>
+                    </div>
+                    <div class="row">
                       <div class="col-lg-12">
-                        OTP Sent to your registered Mail Id
-                      </div>
-                      <div class="col-lg-6">
+                        <p>OTP Sent to your registered Mail Id</p>
                         <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
-                        <a [routerLink]="['/ui-components/supplierrequest']" mat-flat-button color="primary" class="w-100">
-                          Submit & SignIn
-                        </a>
-                      </div>
-                      <div class="col-lg-6">
-
+                        <div class="d-flex">
+                          <a [routerLink]="['/dashboard']" mat-flat-button color="primary" class="w-auto">
+                            SignIn
+                          </a>&nbsp;&nbsp;
+                          <a [routerLink]="['/dashboard']" mat-flat-button color="primary"
+                            class="w-auto bg-light-warning">
+                            Cancel
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </form>
                 </div>
               </mat-tab>
-              <mat-tab label="New to RFGB?">
+              <mat-tab label="SignUp">
                 <div class="f-s-14 p-16 rounded m-t-12">
-                  <form class="">
+                  <form>
+                    
                     <div class="row">
-                      <div class="col-lg-6"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter Your GST
-                          Number</mat-label>
-                        <mat-form-field appearance="outline" class="w-100" color="primary">
-                          <input matInput />
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-12 d-flex align-items-center">
+                            <mat-label class="f-s-14 f-w-600 d-block m-b-16">Email</mat-label>
+                          </div>
+
+                          <div class="col-sm-12">
+                            <mat-form-field appearance="outline" class="w-100">
+                              <input matInput placeholder="xxx xxx" type="email" />
+                              <mat-icon matPrefix class="op-5">
+                                <i-tabler name="mail" class="icon-20 d-flex"></i-tabler>
+                              </mat-icon>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-12 d-flex align-items-center">
+                            <mat-label class="f-s-14 f-w-600 d-block m-b-16">GST number</mat-label>
+                          </div>
+                          <div class="col-sm-12">
+                            <mat-form-field appearance="outline" class="w-100">
+                              <input matInput placeholder="xxx xxx" type="gst" />
+                              <mat-icon matPrefix class="op-5">
+                                <i-tabler name="message-2" class="icon-20 d-flex"></i-tabler>
+                              </mat-icon>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 d-flex align-items-center">
+                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Enter ERP Vendor ID</mat-label>
+                      </div>
+                      <div class="col-sm-12">
+                        <mat-form-field appearance="outline" class="w-100">
+                          <input matInput placeholder="XXXX XXXX" />
+                          <mat-icon matPrefix class="op-5">
+                            <i-tabler name="edit" class="icon-20 d-flex"></i-tabler>
+                          </mat-icon>
                         </mat-form-field>
                       </div>
-                      <div class="col-lg-6"> <mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter Mobile or Mail
-                          ID</mat-label>
-                        <mat-form-field appearance="outline" class="w-100" color="primary">
-                          <input matInput />
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 d-flex align-items-center">
+                        <mat-label class="f-s-14 f-w-600 d-block m-b-16">Enter your OTP</mat-label>
+                      </div>
+                      <div class="col-sm-6">
+                        <mat-form-field appearance="outline" class="w-100">
+                          <input matInput placeholder="1234" />
+                          <mat-icon matPrefix class="op-5">
+                            <i-tabler name="lock" class="icon-20 d-flex"></i-tabler>
+                          </mat-icon>
                         </mat-form-field>
                       </div>
-                      <div class="col-lg-6"><mat-label class="f-s-14 f-w-600 m-b-12 d-block">Enter your OTP</mat-label>
-                        <mat-form-field appearance="outline" class="w-100" color="primary">
-                          <input matInput />
-                        </mat-form-field>
-                      </div>
-                      <div class="col-lg-6">
-                        <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
-                        <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100">
+                      <div class="col-sm-6">
+                        <a [routerLink]="['/']" mat-flat-button color="primary" class="w-100 bg-error">
                           Send OTP
                         </a>
                       </div>
+                    </div>
+                    <div class="row">
                       <div class="col-lg-12">
-                        OTP Sent to your registered Mail Id
-                      </div>
-                      <div class="col-lg-6">
+                        <p>OTP Sent to your registered Mail Id</p>
                         <mat-label class="f-s-14 f-w-600 m-b-12 d-block">&nbsp;</mat-label>
-                        <a [routerLink]="['/authentication/register']" mat-flat-button color="primary" class="w-100">
-                          Submit & SignIn
-                        </a>
-                      </div>
-                      <div class="col-lg-6">
-
+                        <div class="d-flex">
+                          <a [routerLink]="['/dashboard']" mat-flat-button color="primary" class="w-auto">
+                            SignIn
+                          </a>&nbsp;&nbsp;
+                          <a [routerLink]="['/dashboard']" mat-flat-button color="primary"
+                            class="w-auto bg-light-warning">
+                            Cancel
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </form>
+                  </form>                   
                 </div>
               </mat-tab>
             </mat-tab-group>

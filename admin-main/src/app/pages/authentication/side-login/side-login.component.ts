@@ -5,10 +5,10 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from 'src/app/material.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { TablerIconsModule } from 'angular-tabler-icons';
 @Component({
   selector: 'app-side-login',
-  imports: [RouterModule, MaterialModule, FormsModule, ReactiveFormsModule],
+  imports: [RouterModule, MaterialModule, FormsModule, ReactiveFormsModule, TablerIconsModule],
   templateUrl: './side-login.component.html',
 })
 export class AppSideLoginComponent {

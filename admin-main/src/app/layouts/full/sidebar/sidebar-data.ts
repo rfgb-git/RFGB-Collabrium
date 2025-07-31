@@ -1,23 +1,13 @@
 import { NavItem } from './nav-item/nav-item';
 
 export const navItems: NavItem[] = [
-  {
-    navCap: 'Home',
-  },
+  // {
+  //   navCap: 'Home',
+  // },
   {
     displayName: 'Dashboard',
     iconName: 'layout-grid-add',
     route: '/dashboard',
-  },
-  {
-    displayName: 'Supplier Requests',
-    iconName: 'archive',
-    route: '/ui-components/supplierrequest',
-  },
-  {
-    displayName: 'Buyer Portal',
-    iconName: 'archive',
-    route: '/authentication/buyer-portal',
   },
   {
     displayName: 'Buyer Boarding',
@@ -25,10 +15,21 @@ export const navItems: NavItem[] = [
     route: '/ui-components/buyerboarding',
   },
   {
-    displayName: 'Supplier Portal',
+    displayName: 'Supplier Requests',
     iconName: 'archive',
-    route: '/authentication/supplier-portal',
+    route: '/ui-components/supplierrequest',
   },
+  // {
+  //   displayName: 'Buyer Portal',
+  //   iconName: 'archive',
+  //   route: '/authentication/buyer-portal',
+  // },
+  
+  // {
+  //   displayName: 'Supplier Portal',
+  //   iconName: 'archive',
+  //   route: '/authentication/supplier-portal',
+  // },
   // {
   //   displayName: 'Menu',
   //   iconName: 'archive',

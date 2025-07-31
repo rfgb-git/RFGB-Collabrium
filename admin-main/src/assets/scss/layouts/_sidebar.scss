@@ -11,7 +11,7 @@
 }
 
 .branding {
-  padding: 20px;
+  padding: 10px;
 }
 
 .sidebar-list {
@@ -19,11 +19,10 @@
     padding: 0 24px;
 
     .mdc-list-group__subheader {
-      margin: 12px 0;
+      margin: 5px 0 ;
       text-transform: uppercase;
       font-size: 0.75rem;
-      font-weight: 700;
-      margin-top: 24px;
+      font-weight: 700; 
     }
 
     .menu-list-item {
