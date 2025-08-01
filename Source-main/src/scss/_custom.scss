@@ -1,0 +1,93 @@
+// Here you can add other styles
+
+// custom .chartjs-tooltip-body-item padding
+@use "charts";
+
+// custom tweaks for scrollbar styling (wip)
+@use "scrollbar";
+
+ // custom calendar today cell color
+.calendar-cell.today {
+  --cui-calendar-cell-today-color: var(--cui-info) !important;
+}
+
+// custom select week cursor pointer
+.select-week .calendar-row.current {
+  cursor: pointer;
+}
+c-card.card.text-white.bg-primary.py-5.bar-box-r { background: #333 !important; }
+.logo-bar {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+button.btn.mt-3.active.btn-primary, button.btn.btn-success {
+    background: #8cc63c !important;
+    border: 2px solid #8cc63c;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #fff;
+}
+button.btn.mt-3.active.btn-primary:hover, button.btn.btn-success:hover {
+    background: transparent !important;
+    border: 2px solid #8cc63c;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #8cc63c;
+}
+.bar-box-m {
+ font-family: "Montserrat", sans-serif !important; 
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important; 
+}
+.bar-box-m h1 {
+    margin: 0 0 25px;
+}
+button.btn.px-4.btn-primary  {
+    border: 2px solid #8cc63c;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #8cc63c;
+}
+button.btn.px-4.btn-primary:hover {
+    border: 2px solid #8cc63c;
+    background: #8cc63c;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #fff;
+}
+.bar-box-m c-card-body.card-body {
+    display: grid;
+    align-items: center;
+}
+.bar-box-m button.btn.px-0.btn-link {
+    color: #8cc63c;
+    padding: 10px 0;
+}
+c-breadcrumb-item.breadcrumb-item a, .footer a {
+    color: #8cc63c;
+    text-decoration: none;
+}
+.main-box-white {
+  // background: #fff;
+}
+span.badge.ms-auto.badge-sm.bg-info {
+    background: #8cc63c !important;
+    border-radius: 100px;
+    padding: 3px 6px;
+}
+
+
+button {
+    border-radius: 0 !important;
+    padding: 8px 20px !important;
+}
+button.sidebar-toggler {
+    padding: 5px !important;
+}
+td.w1 {
+  min-width: 300px;
+}
